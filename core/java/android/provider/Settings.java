@@ -4530,6 +4530,12 @@ public final class Settings {
          * calls.
          */
         public static final String VIBRATE_WHEN_RINGING = "vibrate_when_ringing";
+		
+      /**
+        * Three Finger Gesture from Oppo
+        * @hide
+        */
+        public static final String THREE_FINGER_GESTURE = "three_finger_gesture";
 
         /**
          * When {@code 1}, Telecom enhanced call blocking functionality is enabled.  When
