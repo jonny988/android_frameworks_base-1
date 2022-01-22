@@ -27,7 +27,7 @@
         <item name="forceDarkAllowed">false</item>
 
         <!-- QS panel background -->
-        <item name="colorBackgroundFloating">@color/black</item>
+        <item name="colorBackgroundFloating">@color/primary_dark_device_default_dark</item>
 
         <!-- volume background -->
         <item name="panelColorBackground">@color/material_grey_800</item>
