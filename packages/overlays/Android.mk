@@ -72,6 +72,10 @@ LOCAL_REQUIRED_MODULES := \
 	IconShapeTaperedRectOverlay \
 	IconShapeTeardropOverlay \
 	IconShapeVesselOverlay \
+	AmoledDarkUIOverlay \
+	CharcoalDarkUIOverlay \
+	GrayDimDarkUIOverlay \
+	MidnightDarkUIOverlay \
 	NavigationBarMode3ButtonOverlay \
 	NavigationBarModeGesturalOverlay \
 	NavigationBarModeGesturalOverlayNarrowBack \
