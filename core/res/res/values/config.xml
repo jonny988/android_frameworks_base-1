@@ -4404,4 +4404,8 @@
 
     <!-- Component names of the services which will keep critical code path warm -->
     <string-array name="config_keep_warming_services" translatable="false" />
+    
+    <!-- Flags for custom speedUI overlays -->
+    <bool name="config_speedui_value">true</bool>
+    <bool name="config_speedui_ips_value">true</bool>
 </resources>
