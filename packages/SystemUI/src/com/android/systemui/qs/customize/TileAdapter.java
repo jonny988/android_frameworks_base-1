@@ -585,7 +585,9 @@ public class TileAdapter extends RecyclerView.Adapter<Holder> implements TileSta
         @Override
         public int getSpanSize(int position) {
             final int type = getItemViewType(position);
-            return type == TYPE_EDIT || type == TYPE_DIVIDER || type == TYPE_HEADER ? 4 : 1;
+            Resources res = mContext.getResources();
+            final int columns = res.getInteger(R.integer.quick_settings_num_columns);
+            return type == TYPE_EDIT || type == TYPE_DIVIDER || type == TYPE_HEADER ? columns : 1;
         }
     };
 
