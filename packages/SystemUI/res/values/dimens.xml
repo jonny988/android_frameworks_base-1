@@ -1422,4 +1422,7 @@
     <dimen name="media_output_dialog_header_icon_padding">16dp</dimen>
     <dimen name="media_output_dialog_icon_corner_radius">16dp</dimen>
     <dimen name="media_output_dialog_title_anim_y_delta">12.5dp</dimen>
+    
+    <!-- The alpha of QS panel background -->
+    <item name="qs_panel_background_alpha" format="float" type="dimen">1</item>
 </resources>
