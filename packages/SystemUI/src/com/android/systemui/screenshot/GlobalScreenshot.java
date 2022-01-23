@@ -62,6 +62,7 @@ import android.os.Message;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.os.SystemProperties;
+import android.os.UserHandle;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
 import android.provider.Settings;
@@ -1287,7 +1288,12 @@ public class GlobalScreenshot implements ViewTreeObserver.OnComputeInternalInset
         // We want to play the shutter sound when it's either forced or
         // when we use normal ringer mode
         if (playSound) {
-            mCameraSound.play(MediaActionSound.SHUTTER_CLICK);
+            if (Settings.System.getIntForUser(mContext.getContentResolver(),
+                Settings.System.SCREENSHOT_SHUTTER_SOUND, 1, UserHandle.USER_CURRENT) == 1) {
+                    // Play the shutter sound to notify that we've taken a screenshot
+                    mCameraSound.play(MediaActionSound.SHUTTER_CLICK);
+            }
+
         }
     }
 
