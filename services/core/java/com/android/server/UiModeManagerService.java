@@ -446,17 +446,6 @@ final class UiModeManagerService extends SystemService {
         mPowerSave =
                 mLocalPowerManager.getLowPowerState(ServiceType.NIGHT_MODE)
                         .batterySaverEnabled;
-        mLocalPowerManager.registerLowPowerModeObserver(ServiceType.NIGHT_MODE, state -> {
-            synchronized (mLock) {
-                if (mPowerSave == state.batterySaverEnabled) {
-                    return;
-                }
-                mPowerSave = state.batterySaverEnabled;
-                if (mSystemReady) {
-                    updateLocked(0, 0);
-                }
-            }
-        });
     }
 
     @VisibleForTesting
