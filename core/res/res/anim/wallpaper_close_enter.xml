@@ -31,5 +31,5 @@
         android:pivotY="50%"
         android:fillEnabled="true" android:fillBefore="true" android:fillAfter="true"
         android:interpolator="@interpolator/linear_out_slow_in"
-        android:duration="275" />
+        android:duration="137" />
 </set>

@@ -23,5 +23,5 @@
     <translate android:fromYDelta="0" android:toYDelta="110%"
             android:fillEnabled="true" android:fillBefore="true" android:fillAfter="true"
             android:interpolator="@interpolator/fast_out_linear_in"
-            android:duration="225"/>
+            android:duration="112"/>
 </set>

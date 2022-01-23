@@ -24,11 +24,11 @@
                android:fillEnabled="true" android:fillBefore="true" android:fillAfter="true"
                android:interpolator="@interpolator/launch_task_behind_target_ydelta"
                android:startOffset="50"
-               android:duration="333" />
+               android:duration="166" />
 
     <translate android:fromYDelta="0%" android:toYDelta="50%"
                android:fillEnabled="true" android:fillBefore="false" android:fillAfter="true"
                android:interpolator="@interpolator/fast_out_linear_in"
                android:startOffset="467"
-               android:duration="317" />
+               android:duration="158" />
 </set>
