@@ -76,6 +76,9 @@ class ThemeOverlayManager {
     @VisibleForTesting
     static final String OVERLAY_CATEGORY_QSALPHA =
             "android.theme.customization.qsalpha";
+    @VisibleForTesting
+    static final String OVERLAY_CATEGORY_SPEEDUI =
+            "android.theme.customization.speedui";
 
     /*
      * All theme customization categories used by the system, in order that they should be applied,
@@ -87,8 +90,9 @@ class ThemeOverlayManager {
             OVERLAY_CATEGORY_FONT,
             OVERLAY_CATEGORY_COLOR,
             OVERLAY_CATEGORY_DARKUI,
-            OVERLAY_CATEGORY_QSPANEL;
-            OVERLAY_CATEGORY_QSALPHA
+            OVERLAY_CATEGORY_SPEEDUI,
+            OVERLAY_CATEGORY_QSPANEL,
+            OVERLAY_CATEGORY_QSALPHA,
             OVERLAY_CATEGORY_ICON_ANDROID,
             OVERLAY_CATEGORY_ICON_SYSUI,
             OVERLAY_CATEGORY_ICON_SETTINGS,
@@ -99,6 +103,7 @@ class ThemeOverlayManager {
     static final Set<String> SYSTEM_USER_CATEGORIES = Sets.newHashSet(
             OVERLAY_CATEGORY_COLOR,
             OVERLAY_CATEGORY_DARKUI,
+            OVERLAY_CATEGORY_SPEEDUI,
             OVERLAY_CATEGORY_QSPANEL,
             OVERLAY_CATEGORY_QSALPHA,
             OVERLAY_CATEGORY_FONT,
@@ -126,7 +131,7 @@ class ThemeOverlayManager {
                 OVERLAY_CATEGORY_SHAPE, OVERLAY_CATEGORY_ICON_ANDROID, OVERLAY_CATEGORY_DARKUI));
         mTargetPackageToCategories.put(SYSUI_PACKAGE,
                 Sets.newHashSet(OVERLAY_CATEGORY_ICON_SYSUI, OVERLAY_CATEGORY_QSPANEL,
-                                OVERLAY_CATEGORY_QSALPHA));
+                                OVERLAY_CATEGORY_QSALPHA, OVERLAY_CATEGORY_SPEEDUI));
         mTargetPackageToCategories.put(SETTINGS_PACKAGE,
                 Sets.newHashSet(OVERLAY_CATEGORY_ICON_SETTINGS));
         mTargetPackageToCategories.put(mLauncherPackage,
@@ -135,6 +140,7 @@ class ThemeOverlayManager {
                 Sets.newHashSet(OVERLAY_CATEGORY_ICON_THEME_PICKER));
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_COLOR, ANDROID_PACKAGE);
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_DARKUI, ANDROID_PACKAGE);
+        mCategoryToTargetPackage.put(OVERLAY_CATEGORY_SPEEDUI, SYSUI_PACKAGE);
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_QSPANEL, SYSUI_PACKAGE);
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_QSALPHA, SYSUI_PACKAGE);
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_FONT, ANDROID_PACKAGE);
