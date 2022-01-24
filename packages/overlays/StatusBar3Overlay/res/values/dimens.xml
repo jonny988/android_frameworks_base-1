@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="status_bar_horizontal_padding_core">3.0dip</dimen>
+    <dimen name="status_bar_horizontal_padding_extra">6.0dip</dimen>
+    <dimen name="status_bar_icon_size">23.0dip</dimen>
+    <dimen name="status_bar_system_icon_intrinsic_size">17.0dip</dimen>
+</resources>

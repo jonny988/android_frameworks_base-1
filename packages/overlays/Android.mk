@@ -94,6 +94,22 @@ LOCAL_REQUIRED_MODULES := \
   	QSPanelAlpha70Overlay \
   	QSPanelAlpha80Overlay \
   	QSPanelAlpha90Overlay \
+  	UIcorners0dpOverlay \
+  	UIcorners2dpOverlay \
+  	UIcorners8dpOverlay \
+  	UIcorners16dpOverlay \
+  	UIcorners20dpOverlay \
+  	UIcorners24dpOverlay \
+  	StatusBar1Overlay \
+  	StatusBar2Overlay \
+  	StatusBar3Overlay \
+  	Rounded12dpOverlay \
+  	Rounded16dpOverlay \
+  	Rounded20dpOverlay \
+  	Rounded24dpOverlay \
+  	Rounded28dpOverlay \
+  	Rounded32dpOverlay \
+  	Rounded36dpOverlay \
 	NavigationBarMode3ButtonOverlay \
 	NavigationBarModeGesturalOverlay \
 	NavigationBarModeGesturalOverlayNarrowBack \
