@@ -85,6 +85,9 @@ class ThemeOverlayManager {
     @VisibleForTesting
     static final String OVERLAY_CATEGORY_ROUNDED =
             "android.theme.customization.rounded";
+    @VisibleForTesting
+    static final String OVERLAY_CATEGORY_PADDING =
+            "android.theme.customization.padding";
 
     /*
      * All theme customization categories used by the system, in order that they should be applied,
@@ -99,6 +102,7 @@ class ThemeOverlayManager {
             OVERLAY_CATEGORY_SPEEDUI,
             OVERLAY_CATEGORY_ROUNDED,
             OVERLAY_CATEGORY_QSPANEL,
+            OVERLAY_CATEGORY_PADDING,
             OVERLAY_CATEGORY_STATUSBAR,
             OVERLAY_CATEGORY_QSALPHA,
             OVERLAY_CATEGORY_ICON_ANDROID,
@@ -114,6 +118,7 @@ class ThemeOverlayManager {
             OVERLAY_CATEGORY_SPEEDUI,
             OVERLAY_CATEGORY_ROUNDED,
             OVERLAY_CATEGORY_QSPANEL,
+            OVERLAY_CATEGORY_PADDING,
             OVERLAY_CATEGORY_STATUSBAR,
             OVERLAY_CATEGORY_QSALPHA,
             OVERLAY_CATEGORY_FONT,
@@ -142,7 +147,7 @@ class ThemeOverlayManager {
                 OVERLAY_CATEGORY_SPEEDUI, OVERLAY_CATEGORY_ROUNDED));
         mTargetPackageToCategories.put(SYSUI_PACKAGE,
                 Sets.newHashSet(OVERLAY_CATEGORY_ICON_SYSUI, OVERLAY_CATEGORY_QSPANEL,
-                                OVERLAY_CATEGORY_QSALPHA));
+                                OVERLAY_CATEGORY_QSALPHA, OVERLAY_CATEGORY_PADDING));
         mTargetPackageToCategories.put(SETTINGS_PACKAGE,
                 Sets.newHashSet(OVERLAY_CATEGORY_ICON_SETTINGS));
         mTargetPackageToCategories.put(mLauncherPackage,
@@ -155,6 +160,7 @@ class ThemeOverlayManager {
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_ROUNDED, ANDROID_PACKAGE);
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_QSPANEL, SYSUI_PACKAGE);
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_QSALPHA, SYSUI_PACKAGE);
+        mCategoryToTargetPackage.put(OVERLAY_CATEGORY_PADDING, SYSUI_PACKAGE);
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_STATUSBAR, ANDROID_PACKAGE);
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_FONT, ANDROID_PACKAGE);
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_SHAPE, ANDROID_PACKAGE);
