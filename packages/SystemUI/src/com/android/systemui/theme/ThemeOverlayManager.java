@@ -82,6 +82,9 @@ class ThemeOverlayManager {
     @VisibleForTesting
     static final String OVERLAY_CATEGORY_STATUSBAR =
             "android.theme.customization.statusbar";
+    @VisibleForTesting
+    static final String OVERLAY_CATEGORY_ROUNDED =
+            "android.theme.customization.rounded";
 
     /*
      * All theme customization categories used by the system, in order that they should be applied,
@@ -94,6 +97,7 @@ class ThemeOverlayManager {
             OVERLAY_CATEGORY_COLOR,
             OVERLAY_CATEGORY_DARKUI,
             OVERLAY_CATEGORY_SPEEDUI,
+            OVERLAY_CATEGORY_ROUNDED,
             OVERLAY_CATEGORY_QSPANEL,
             OVERLAY_CATEGORY_STATUSBAR,
             OVERLAY_CATEGORY_QSALPHA,
@@ -108,6 +112,7 @@ class ThemeOverlayManager {
             OVERLAY_CATEGORY_COLOR,
             OVERLAY_CATEGORY_DARKUI,
             OVERLAY_CATEGORY_SPEEDUI,
+            OVERLAY_CATEGORY_ROUNDED,
             OVERLAY_CATEGORY_QSPANEL,
             OVERLAY_CATEGORY_STATUSBAR,
             OVERLAY_CATEGORY_QSALPHA,
@@ -134,7 +139,7 @@ class ThemeOverlayManager {
         mTargetPackageToCategories.put(ANDROID_PACKAGE, Sets.newHashSet(
                 OVERLAY_CATEGORY_COLOR, OVERLAY_CATEGORY_FONT, OVERLAY_CATEGORY_STATUSBAR,
                 OVERLAY_CATEGORY_SHAPE, OVERLAY_CATEGORY_ICON_ANDROID, OVERLAY_CATEGORY_DARKUI,
-                OVERLAY_CATEGORY_SPEEDUI));
+                OVERLAY_CATEGORY_SPEEDUI, OVERLAY_CATEGORY_ROUNDED));
         mTargetPackageToCategories.put(SYSUI_PACKAGE,
                 Sets.newHashSet(OVERLAY_CATEGORY_ICON_SYSUI, OVERLAY_CATEGORY_QSPANEL,
                                 OVERLAY_CATEGORY_QSALPHA));
@@ -147,6 +152,7 @@ class ThemeOverlayManager {
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_COLOR, ANDROID_PACKAGE);
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_DARKUI, ANDROID_PACKAGE);
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_SPEEDUI, ANDROID_PACKAGE);
+        mCategoryToTargetPackage.put(OVERLAY_CATEGORY_ROUNDED, ANDROID_PACKAGE);
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_QSPANEL, SYSUI_PACKAGE);
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_QSALPHA, SYSUI_PACKAGE);
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_STATUSBAR, ANDROID_PACKAGE);
