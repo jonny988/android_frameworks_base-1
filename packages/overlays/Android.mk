@@ -115,6 +115,9 @@ LOCAL_REQUIRED_MODULES := \
   	Padding20dpOverlay \
   	Padding24dpOverlay \
   	Padding28dpOverlay \
+  	FontUbuntuOverlay \
+  	FontExo2Overlay \
+  	FontZillaOverlay \
 	NavigationBarMode3ButtonOverlay \
 	NavigationBarModeGesturalOverlay \
 	NavigationBarModeGesturalOverlayNarrowBack \
