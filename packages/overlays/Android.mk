@@ -110,6 +110,11 @@ LOCAL_REQUIRED_MODULES := \
   	Rounded28dpOverlay \
   	Rounded32dpOverlay \
   	Rounded36dpOverlay \
+  	Padding12dpOverlay \
+  	Padding16dpOverlay \
+  	Padding20dpOverlay \
+  	Padding24dpOverlay \
+  	Padding28dpOverlay \
 	NavigationBarMode3ButtonOverlay \
 	NavigationBarModeGesturalOverlay \
 	NavigationBarModeGesturalOverlayNarrowBack \
