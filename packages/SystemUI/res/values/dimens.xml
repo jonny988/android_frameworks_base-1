@@ -1358,7 +1358,7 @@
     <!-- Home Controls activity view detail panel-->
     <dimen name="controls_activity_view_top_offset">100dp</dimen>
     <dimen name="controls_activity_view_text_size">17sp</dimen>
-    <dimen name="controls_activity_view_corner_radius">@*android:dimen/config_bottomDialogCornerRadius</dimen>
+    <dimen name="controls_activity_view_corner_radius">@*android:dimen/rounded_corners_ui_core</dimen>
 
     <!-- Home Controls management screens -->
     <dimen name="controls_management_top_padding">48dp</dimen>

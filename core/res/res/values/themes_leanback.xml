@@ -109,7 +109,7 @@
         <item name="listPreferredItemPaddingEnd">?attr/dialogPreferredPadding</item>
 
         <!-- Dialog attributes -->
-        <item name="dialogCornerRadius">@dimen/config_dialogCornerRadius</item>
+        <item name="dialogCornerRadius">@*android:dimen/rounded_corners_ui_core</item>
         <item name="alertDialogTheme">@style/Theme.DeviceDefault.Dialog.Alert</item>
 
         <!-- Button styles -->

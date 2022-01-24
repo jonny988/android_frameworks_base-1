@@ -16,7 +16,7 @@
 
 <inset xmlns:android="http://schemas.android.com/apk/res/android">
     <shape android:shape="rectangle">
-        <corners android:radius="@dimen/config_bottomDialogCornerRadius" />
+        <corners android:radius="@*android:dimen/rounded_corners_ui_core" />
         <solid android:color="?attr/colorBackground" />
     </shape>
 </inset>
