@@ -549,10 +549,10 @@
     <dimen name="kg_small_widget_height">160dp</dimen>
 
     <!-- Rounded corner radius for video subtitles. -->
-    <dimen name="subtitle_corner_radius">2dp</dimen>
+    <dimen name="subtitle_corner_radius">@*android:dimen/rounded_corners_ui_core</dimen>
 
     <!-- Shadow radius for video subtitles. -->
-    <dimen name="subtitle_shadow_radius">2dp</dimen>
+    <dimen name="subtitle_shadow_radius">@*android:dimen/rounded_corners_ui_core</dimen>
 
     <!-- Shadow offset for video subtitles. -->
     <dimen name="subtitle_shadow_offset">2dp</dimen>
@@ -611,7 +611,7 @@
     <dimen name="default_magnifier_width">100dp</dimen>
     <dimen name="default_magnifier_height">48dp</dimen>
     <dimen name="default_magnifier_elevation">4dp</dimen>
-    <dimen name="default_magnifier_corner_radius">2dp</dimen>
+    <dimen name="default_magnifier_corner_radius">@*android:dimen/rounded_corners_ui_core</dimen>
     <dimen name="default_magnifier_vertical_offset">-42dp</dimen>
     <dimen name="default_magnifier_horizontal_offset">0dp</dimen>
     <item type="dimen" format="float" name="default_magnifier_zoom">1.25</item>
@@ -657,7 +657,7 @@
     <!-- Top/bottom padding of the tooltip text. -->
     <dimen name="tooltip_vertical_padding">6.5dp</dimen>
     <!-- Border corner radius of the tooltip window. -->
-    <dimen name="tooltip_corner_radius">2dp</dimen>
+    <dimen name="tooltip_corner_radius">@*android:dimen/rounded_corners_ui_core</dimen>
     <!-- View with the height equal or above this threshold will have a tooltip anchored
     to the mouse/touch position -->
     <dimen name="tooltip_precise_anchor_threshold">96dp</dimen>
@@ -789,7 +789,7 @@
     <dimen name="slice_padding">16dp</dimen>
 
     <!-- Default dialog corner radius -->
-    <dimen name="dialog_corner_radius">2dp</dimen>
+    <dimen name="dialog_corner_radius">@*android:dimen/rounded_corners_ui_core</dimen>
 
     <!-- Size of thumbnail used in the cross profile apps animation -->
     <dimen name="cross_profile_apps_thumbnail_size">72dp</dimen>
@@ -820,7 +820,7 @@
     <dimen name="seekbar_thumb_exclusion_max_size">48dp</dimen>
 
     <!-- chooser/resolver (sharesheet) spacing -->
-    <dimen name="chooser_corner_radius">8dp</dimen>
+    <dimen name="chooser_corner_radius">@*android:dimen/rounded_corners_ui_core</dimen>
     <dimen name="chooser_row_text_option_translate">25dp</dimen>
     <dimen name="chooser_view_spacing">18dp</dimen>
     <dimen name="chooser_edge_margin_thin">16dp</dimen>
@@ -865,4 +865,8 @@
     
     <!-- Default extra horizontal drawable padding for status bar icons -->
     <dimen name="status_bar_horizontal_padding_extra">2dp</dimen>
+    
+    <!-- Default UI rounded corner value -->
+    <dimen name="rounded_corners_ui_core">4dp</dimen>
+    <dimen name="system_app_widget_background_radius">@*android:dimen/rounded_corners_ui_core</dimen>
 </resources>
