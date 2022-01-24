@@ -859,4 +859,7 @@
     <dimen name="waterfall_display_top_edge_size">0px</dimen>
     <dimen name="waterfall_display_right_edge_size">0px</dimen>
     <dimen name="waterfall_display_bottom_edge_size">0px</dimen>
+    
+    <!-- Default horizontal drawable padding for status bar icons -->
+    <dimen name="status_bar_horizontal_padding_core">0dp</dimen>
 </resources>

@@ -17,6 +17,6 @@
 */
 -->
 <inset xmlns:android="http://schemas.android.com/apk/res/android"
-    android:insetLeft="0dp"
-    android:insetRight="0dp"
+    android:insetLeft="@dimen/status_bar_horizontal_padding"
+    android:insetRight="@dimen/status_bar_horizontal_padding"
     android:drawable="@drawable/ic_data_saver" />

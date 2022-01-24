@@ -34,14 +34,14 @@
             android:layout_width="wrap_content"
             android:src="@drawable/ic_activity_down"
             android:visibility="gone"
-            android:paddingEnd="0dp"
+            android:paddingEnd="@dimen/status_bar_horizontal_padding"
             />
         <ImageView
             android:id="@+id/mobile_out"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:src="@drawable/ic_activity_up"
-            android:paddingEnd="0dp"
+            android:paddingEnd="@dimen/status_bar_horizontal_padding"
             android:visibility="gone"
             />
     </FrameLayout>
@@ -51,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_gravity="center_vertical"
         android:paddingStart="1dp"
-        android:paddingEnd="0dp"
+        android:paddingEnd="@dimen/status_bar_horizontal_padding"
         android:visibility="gone" />
     <Space
         android:id="@+id/mobile_roaming_space"
