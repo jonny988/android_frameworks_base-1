@@ -79,7 +79,7 @@
     <dimen name="status_bar_clock_size">14sp</dimen>
 
     <!-- The starting padding for the clock in the status bar. -->
-    <dimen name="status_bar_clock_starting_padding">1dp</dimen>
+    <dimen name="status_bar_clock_starting_padding">@*android:dimen/status_bar_horizontal_padding_extra</dimen>
 
     <!-- The end padding for the clock in the status bar. -->
     <dimen name="status_bar_clock_end_padding">0dp</dimen>
@@ -88,7 +88,7 @@
     <dimen name="status_bar_left_clock_starting_padding">0dp</dimen>
 
     <!-- End padding for left-aligned status bar clock -->
-    <dimen name="status_bar_left_clock_end_padding">1dp</dimen>
+    <dimen name="status_bar_left_clock_end_padding">@*android:dimen/status_bar_horizontal_padding_extra</dimen>
 
     <!-- Spacing after the wifi signals that is present if there are any icons following it. -->
     <dimen name="status_bar_wifi_signal_spacer_width">@dimen/status_bar_horizontal_padding</dimen>
@@ -885,10 +885,10 @@
     <dimen name="signal_cluster_margin_start">@dimen/status_bar_horizontal_padding</dimen>
  
     <!-- Padding between signal cluster and battery icon -->
-    <dimen name="signal_cluster_battery_padding">2dp</dimen>
+    <dimen name="signal_cluster_battery_padding">@*android:dimen/status_bar_horizontal_padding_extra</dimen>
 
     <!-- Padding for signal cluster and battery icon when there are not icons in signal cluster -->
-    <dimen name="no_signal_cluster_battery_padding">2dp</dimen>
+    <dimen name="no_signal_cluster_battery_padding">@*android:dimen/status_bar_horizontal_padding_extra</dimen>
 
     <!-- Screen pinning request width -->
     <dimen name="screen_pinning_request_width">@dimen/match_parent</dimen>

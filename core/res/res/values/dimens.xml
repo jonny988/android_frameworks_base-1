@@ -862,4 +862,7 @@
     
     <!-- Default horizontal drawable padding for status bar icons -->
     <dimen name="status_bar_horizontal_padding_core">0dp</dimen>
+    
+    <!-- Default extra horizontal drawable padding for status bar icons -->
+    <dimen name="status_bar_horizontal_padding_extra">2dp</dimen>
 </resources>
