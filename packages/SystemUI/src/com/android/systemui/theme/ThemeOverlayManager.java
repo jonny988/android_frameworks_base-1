@@ -79,6 +79,9 @@ class ThemeOverlayManager {
     @VisibleForTesting
     static final String OVERLAY_CATEGORY_SPEEDUI =
             "android.theme.customization.speedui";
+    @VisibleForTesting
+    static final String OVERLAY_CATEGORY_STATUSBAR =
+            "android.theme.customization.statusbar";
 
     /*
      * All theme customization categories used by the system, in order that they should be applied,
@@ -92,6 +95,7 @@ class ThemeOverlayManager {
             OVERLAY_CATEGORY_DARKUI,
             OVERLAY_CATEGORY_SPEEDUI,
             OVERLAY_CATEGORY_QSPANEL,
+            OVERLAY_CATEGORY_STATUSBAR,
             OVERLAY_CATEGORY_QSALPHA,
             OVERLAY_CATEGORY_ICON_ANDROID,
             OVERLAY_CATEGORY_ICON_SYSUI,
@@ -105,6 +109,7 @@ class ThemeOverlayManager {
             OVERLAY_CATEGORY_DARKUI,
             OVERLAY_CATEGORY_SPEEDUI,
             OVERLAY_CATEGORY_QSPANEL,
+            OVERLAY_CATEGORY_STATUSBAR,
             OVERLAY_CATEGORY_QSALPHA,
             OVERLAY_CATEGORY_FONT,
             OVERLAY_CATEGORY_SHAPE,
@@ -127,7 +132,7 @@ class ThemeOverlayManager {
         mLauncherPackage = launcherPackage;
         mThemePickerPackage = themePickerPackage;
         mTargetPackageToCategories.put(ANDROID_PACKAGE, Sets.newHashSet(
-                OVERLAY_CATEGORY_COLOR, OVERLAY_CATEGORY_FONT,
+                OVERLAY_CATEGORY_COLOR, OVERLAY_CATEGORY_FONT, OVERLAY_CATEGORY_STATUSBAR,
                 OVERLAY_CATEGORY_SHAPE, OVERLAY_CATEGORY_ICON_ANDROID, OVERLAY_CATEGORY_DARKUI,
                 OVERLAY_CATEGORY_SPEEDUI));
         mTargetPackageToCategories.put(SYSUI_PACKAGE,
@@ -144,6 +149,7 @@ class ThemeOverlayManager {
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_SPEEDUI, ANDROID_PACKAGE);
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_QSPANEL, SYSUI_PACKAGE);
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_QSALPHA, SYSUI_PACKAGE);
+        mCategoryToTargetPackage.put(OVERLAY_CATEGORY_STATUSBAR, ANDROID_PACKAGE);
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_FONT, ANDROID_PACKAGE);
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_SHAPE, ANDROID_PACKAGE);
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_ICON_ANDROID, ANDROID_PACKAGE);
