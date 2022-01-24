@@ -75,6 +75,25 @@ LOCAL_REQUIRED_MODULES := \
 	CharcoalDarkUIOverlay \
 	GrayDimDarkUIOverlay \
 	MidnightDarkUIOverlay \
+	Level1SpeedUIOverlay \
+ 	Level2SpeedUIOverlay \
+ 	Level3SpeedUIOverlay \
+  	Level4SpeedUIOverlay \
+ 	Level5SpeedUIOverlay \
+ 	Level6SpeedUIOverlay \
+ 	Level7SpeedUIOverlay \
+ 	QSPanel32Overlay \
+ 	QSPanel33Overlay \
+ 	QSPanel34Overlay \
+ 	QSPanel42Overlay \
+ 	QSPanel43Overlay \
+ 	QSPanel53Overlay \
+ 	QSPanel55Overlay \
+ 	QSPanelAlpha50Overlay \
+  	QSPanelAlpha60Overlay \
+  	QSPanelAlpha70Overlay \
+  	QSPanelAlpha80Overlay \
+  	QSPanelAlpha90Overlay \
 	NavigationBarMode3ButtonOverlay \
 	NavigationBarModeGesturalOverlay \
 	NavigationBarModeGesturalOverlayNarrowBack \

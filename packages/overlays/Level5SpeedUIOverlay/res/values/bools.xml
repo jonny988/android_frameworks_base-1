@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="config_enableAutoPowerModes">true</bool>
+    <bool name="config_speedui_value">false</bool>
+    <bool name="config_supportsRoundedCornersOnWindows">false</bool>
+</resources>
