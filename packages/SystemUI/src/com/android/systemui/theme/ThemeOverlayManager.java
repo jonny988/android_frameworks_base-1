@@ -88,6 +88,18 @@ class ThemeOverlayManager {
     @VisibleForTesting
     static final String OVERLAY_CATEGORY_PADDING =
             "android.theme.customization.padding";
+    @VisibleForTesting
+    static final String OVERLAY_CATEGORY_GESTURE_WIDTH =
+            "android.theme.customization.gesture.width";
+    @VisibleForTesting
+    static final String OVERLAY_CATEGORY_GESTURE_THICKNESS =
+            "android.theme.customization.gesture.thickness";
+    @VisibleForTesting
+    static final String OVERLAY_CATEGORY_IMMERSIVE_NAVIGATIONBAR =
+            "android.theme.customization.immersive.navigationbar";
+    @VisibleForTesting
+    static final String OVERLAY_CATEGORY_NOTCHKILLER =
+            "android.theme.customization.notchkiller";
 
     /*
      * All theme customization categories used by the system, in order that they should be applied,
@@ -103,6 +115,11 @@ class ThemeOverlayManager {
             OVERLAY_CATEGORY_ROUNDED,
             OVERLAY_CATEGORY_QSPANEL,
             OVERLAY_CATEGORY_PADDING,
+            OVERLAY_CATEGORY_NOTCHKILLER,
+            OVERLAY_CATEGORY_NAVIGATIONBAR_STYLE,
+            OVERLAY_CATEGORY_IMMERSIVE_NAVIGATIONBAR,
+            OVERLAY_CATEGORY_GESTURE_THICKNESS,
+            OVERLAY_CATEGORY_GESTURE_WIDTH,
             OVERLAY_CATEGORY_STATUSBAR,
             OVERLAY_CATEGORY_QSALPHA,
             OVERLAY_CATEGORY_ICON_ANDROID,
@@ -119,6 +136,11 @@ class ThemeOverlayManager {
             OVERLAY_CATEGORY_ROUNDED,
             OVERLAY_CATEGORY_QSPANEL,
             OVERLAY_CATEGORY_PADDING,
+            OVERLAY_CATEGORY_NOTCHKILLER,
+            OVERLAY_CATEGORY_NAVIGATIONBAR_STYLE,
+            OVERLAY_CATEGORY_IMMERSIVE_NAVIGATIONBAR,
+            OVERLAY_CATEGORY_GESTURE_THICKNESS,
+            OVERLAY_CATEGORY_GESTURE_WIDTH,
             OVERLAY_CATEGORY_STATUSBAR,
             OVERLAY_CATEGORY_QSALPHA,
             OVERLAY_CATEGORY_FONT,
@@ -144,10 +166,12 @@ class ThemeOverlayManager {
         mTargetPackageToCategories.put(ANDROID_PACKAGE, Sets.newHashSet(
                 OVERLAY_CATEGORY_COLOR, OVERLAY_CATEGORY_FONT, OVERLAY_CATEGORY_STATUSBAR,
                 OVERLAY_CATEGORY_SHAPE, OVERLAY_CATEGORY_ICON_ANDROID, OVERLAY_CATEGORY_DARKUI,
-                OVERLAY_CATEGORY_SPEEDUI, OVERLAY_CATEGORY_ROUNDED));
+                OVERLAY_CATEGORY_SPEEDUI, OVERLAY_CATEGORY_ROUNDED, OVERLAY_CATEGORY_NOTCHKILLER));
         mTargetPackageToCategories.put(SYSUI_PACKAGE,
                 Sets.newHashSet(OVERLAY_CATEGORY_ICON_SYSUI, OVERLAY_CATEGORY_QSPANEL,
-                                OVERLAY_CATEGORY_QSALPHA, OVERLAY_CATEGORY_PADDING));
+                                OVERLAY_CATEGORY_QSALPHA, OVERLAY_CATEGORY_PADDING,
+                                OVERLAY_CATEGORY_GESTURE_WIDTH, OVERLAY_CATEGORY_GESTURE_THICKNESS,
+                                OVERLAY_CATEGORY_IMMERSIVE_NAVIGATIONBAR, OVERLAY_CATEGORY_NAVIGATIONBAR_STYLE));
         mTargetPackageToCategories.put(SETTINGS_PACKAGE,
                 Sets.newHashSet(OVERLAY_CATEGORY_ICON_SETTINGS));
         mTargetPackageToCategories.put(mLauncherPackage,
@@ -161,6 +185,11 @@ class ThemeOverlayManager {
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_QSPANEL, SYSUI_PACKAGE);
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_QSALPHA, SYSUI_PACKAGE);
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_PADDING, SYSUI_PACKAGE);
+        mCategoryToTargetPackage.put(OVERLAY_CATEGORY_GESTURE_THICKNESS, SYSUI_PACKAGE);
+        mCategoryToTargetPackage.put(OVERLAY_CATEGORY_GESTURE_WIDTH, SYSUI_PACKAGE);
+        mCategoryToTargetPackage.put(OVERLAY_CATEGORY_IMMERSIVE_NAVIGATIONBAR, SYSUI_PACKAGE);
+        mCategoryToTargetPackage.put(OVERLAY_CATEGORY_NAVIGATIONBAR_STYLE, SYSUI_PACKAGE);
+        mCategoryToTargetPackage.put(OVERLAY_CATEGORY_NOTCHKILLER, ANDROID_PACKAGE);
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_STATUSBAR, ANDROID_PACKAGE);
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_FONT, ANDROID_PACKAGE);
         mCategoryToTargetPackage.put(OVERLAY_CATEGORY_SHAPE, ANDROID_PACKAGE);
